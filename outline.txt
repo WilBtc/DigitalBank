@@ -1,0 +1,115 @@
+backend/
+│
+├── src/
+│   ├── controllers/            # Business logic
+│   │   ├── authController.js   # Authentication-related functions
+│   │   ├── userController.js   # User management
+│   │   ├── transactionController.js # Transaction processing
+│   │   └── ...
+│   │
+│   ├── models/                 # Database models
+│   │   ├── User.js             # User model
+│   │   ├── Transaction.js      # Transaction model
+│   │   └── ...
+│   │
+│   ├── routes/                 # API routes
+│   │   ├── authRoutes.js       # Routes for authentication
+│   │   ├── userRoutes.js       # Routes for user management
+│   │   ├── transactionRoutes.js # Routes for transactions
+│   │   └── ...
+│   │
+│   ├── middleware/             # Middleware functions
+│   │   ├── authMiddleware.js   # Authentication middleware
+│   │   └── ...
+│   │
+│   ├── utils/                  # Utility functions and libraries
+│   │   ├── cryptoUtils.js      # Crypto-related utilities
+│   │   └── ...
+│   │
+│   ├── config/                 # Configuration files
+│   │   ├── db.js               # Database connection
+│   │   └── ...
+│   │
+│   └── server.js               # Entry point for the backend application
+│
+└── package.json                # Node.js dependencies and scripts
+
+
+
+frontend/
+│
+├── public/                     # Static files
+│   └── index.html              # HTML entry point
+│
+├── src/
+│   ├── components/             # Reusable components
+│   │   ├── AccountSummary/     
+│   │   │   └── AccountSummary.tsx
+│   │   ├── BusinessAccount/
+│   │   │   └── BusinessAccountDetails.tsx
+│   │   ├── DashBoard/
+│   │   │   └── DashBoardItem.tsx
+│   │   ├── NavBar/
+│   │   │   └── NavBar.tsx
+│   │   ├── Settings/
+│   │   │   └── SettingsForm.tsx
+│   │   ├── TransactionList/
+│   │   │   └── TransactionList.tsx
+│   │   ├── Login/
+│   │   │   └── Login.tsx
+│   │   └── Registration/
+│   │       └── Registration.tsx
+│   │
+│   ├── pages/                  # Page components
+│   │   ├── HomePage.tsx        # Main landing page
+│   │   ├── DashboardPage.tsx   # User dashboard
+│   │   ├── SettingsPage.tsx    # User settings
+│   │   └── ...
+│   │
+│   ├── app/                    # Core application setup
+│   │   ├── App.tsx             # Main component
+│   │   └── ...
+│   │
+│   ├── utils/                  # Utility functions
+│   │   └── api.ts              # API communication utilities
+│   │
+│   ├── styles/                 # Style files
+│   │   └── theme.ts            # Material-UI theme customization
+│   │
+│   ├── hooks/                  # Custom React hooks
+│   │   └── useAuth.ts          # Authentication related hook
+│   │
+│   ├── context/                # Context providers
+│   │   └── AuthContext.tsx     # Context for authentication
+│   │
+│   └── index.tsx               # Entry point for the React application
+│
+└── package.json                # Node.js dependencies and scripts
+
+
+
+common/
+│
+├── components/                # Shared React components
+│   ├── LoadingSpinner.js      # Reusable loading spinner component
+│   ├── PrivateRoute.js        # Component for protected routes
+│   ├── Header.js              # Common header component
+│   └── Footer.js              # Common footer component
+│
+├── hooks/                     # Custom React hooks
+│   ├── useAuth.js             # Hook for authentication logic
+│   └── useApi.js              # Hook for API calls
+│
+├── utils/                     # Utility functions
+│   ├── api.js                 # Functions for API interactions
+│   ├── validation.js          # Shared validation functions
+│   └── format.js              # Functions for formatting data
+│
+├── constants/                 # Constant values
+│   ├── apiEndpoints.js        # API endpoint URLs
+│   ├── roles.js               # User role definitions
+│   └── config.js              # Configuration constants
+│
+└── styles/                    # Shared styling
+    ├── globalStyles.js        # Global style definitions
+    └── theme.js               # Theme settings for Material-UI
